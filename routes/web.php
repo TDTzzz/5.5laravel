@@ -59,3 +59,11 @@ Route::get('/manage/deleteL/{id}','ManageController@deleteL');
 Route::get('excel/export','ExcelController@export');
 Route::get('excel/import','ExcelController@import');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
